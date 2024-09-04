@@ -11,3 +11,14 @@
 *Ref 2: ELK Stack*<br>
  ![5 ELK benefits](https://github.com/user-attachments/assets/233fe37b-3d92-4eef-8f76-5a94f464cf9b)<br>
 *Ref 3: ELK Benefits*
+
+#Day 3
+ 1. Setup Elasticsearch. Using <a href="https://www.vultr.com/">Vultr</a> create a Virtual Private Cloud (VPC) network. Select a location > add an IP range > name your VPC.
+ 2. Deploy a new server: Optimized cloud compute > choose location > select Ubuntu 22.04 for Elasticsearch > 80GB NVME > disable: autobackups, IPv6. enable: VPC 2.0 and make sure to choose the one you created > name the host > click deploy new.
+ 3. Open PowerShell and SSH into the server. Using username (root) and the public IP, use password given on your vultr page. Update repositories.
+ 4. Install <a href="https://www.elastic.co/downloads/elasticsearch">Elasticsearch debX86_64</a> > copy the link address from the download button > use the wget command in PS to download it.
+ 5. Copy the security information and paste it in notepad for later. Open the elasticsearc.yaml and change the network.host to the public IP address and uncomment http.port.
+ 6. Back at Vultr go to firewall settings > add a firewall group > change SSH to allow MYIP. Navigate to your VM settings and select the newly created firewall rule.
+ 7. Start Elasticsearch.<br>
+ ![elasticsearch start](https://github.com/user-attachments/assets/401f90ab-973b-4f9d-aa73-8d173c1a6214)
+*Ref 4: Elasticsearch Start*
