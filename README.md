@@ -22,3 +22,11 @@
  7. Start Elasticsearch.<br>
  ![elasticsearch start](https://github.com/user-attachments/assets/401f90ab-973b-4f9d-aa73-8d173c1a6214)
 *Ref 4: Elasticsearch Start*
+
+#Day 4
+ 1. Download <a href="https://www.elastic.co/downloads/kibana">Kibana</a> using the same procedure as Elasticsearch.
+ 2. Configure Kibana "nano /etc/kibana/kibana.yaml", uncomment server.port and server.host along with the public IP of your server on server.host .
+ 3. Run "systemctl daemon-reload", "systemctl enable kibana.service", "systemctl start kibana.service", and "systemctl status kibana.service" in that order.
+ 4. Run "./elasticsearch-create-enrollment-token --scope kibana" and copy the token to notepad.
+ 5. Open a new browser window with the server public IP address and port 5601, do this after adjustin firewall rules to allow your ip address access. on the server firewall "tcp 1-65535 MYIP" and "ufw allow 5601" on the server itself.
+ 6. 
