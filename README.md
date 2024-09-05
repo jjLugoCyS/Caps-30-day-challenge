@@ -34,4 +34,4 @@
  ![Kibana status](https://github.com/user-attachments/assets/16ec1a4c-2114-4cd1-b0ad-114aeafe6793)<br>
  *Ref 5: Kibana.service status*<br>
 ![kibana alerts](https://github.com/user-attachments/assets/c7c59172-618d-445b-94c4-88f6499849cb)<br>
-Ref 6: Kibana alerts*<br>
+*Ref 6: Kibana alerts*<br>
