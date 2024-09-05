@@ -31,5 +31,7 @@
  5. Open a new browser window with the server public IP address and port 5601, do this after adjustin firewall rules to allow your ip address access. on the server firewall "tcp 1-65535 MYIP" and "ufw allow 5601" on the server itself.
  6. In the elastic config read through the instructions and open your suroconfig security information notes.
  7. Add in your keystores: In your ssh session invoke kibana encryption keys. Copy these keys to your notes and invoke Kibana keystore > add a field name > then the encryption value. DO this for all 3 fields from the encryption keys. Use systemctl restart kibana.service to restart the server. Open your web browser and everything should be ready. 
- ![Kibana status](https://github.com/user-attachments/assets/16ec1a4c-2114-4cd1-b0ad-114aeafe6793) ![kibana alerts](https://github.com/user-attachments/assets/c7c59172-618d-445b-94c4-88f6499849cb)
-
+ ![Kibana status](https://github.com/user-attachments/assets/16ec1a4c-2114-4cd1-b0ad-114aeafe6793)<br>
+ *Ref 5: Kibana.service status*<br>
+![kibana alerts](https://github.com/user-attachments/assets/c7c59172-618d-445b-94c4-88f6499849cb)<br>
+Ref 6: Kibana alerts*<br>
