@@ -35,3 +35,12 @@
  *Ref 5: Kibana.service status*<br>
 ![kibana alerts](https://github.com/user-attachments/assets/c7c59172-618d-445b-94c4-88f6499849cb)<br>
 *Ref 6: Kibana alerts*<br>
+
+#Day 5
+ 1. Log into Vultr and deploy a new server > select cloud compute-shared cpu > choose a location > select Windows server 2022 standard image > choose a 55GB SSD > diable autoback ups and IPv6 (the diagram was adujusted to remove the Windows and Ubuntu servers from th VPC in case a comprise) > enter a hostname > click deploy.
+ 2. Click on the server, select view console to spin up the server.
+ 3. Copy the public IP and paste it into the remote desktop computer field.
+    ![30days-Caps-Diagram](https://github.com/user-attachments/assets/6d70f37d-f77d-4509-b6b5-19034233d710)<br>
+    *Ref 7: Updated diagram*<br>
+    ![Windows 2022 server](https://github.com/user-attachments/assets/96fef5cf-9f3e-4bd6-ac58-331dee1e0bf2)
+    *Ref 8: Windows 2022 server*<br>
