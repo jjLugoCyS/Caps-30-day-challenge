@@ -44,3 +44,9 @@
     *Ref 7: Updated diagram*<br>
     ![Windows 2022 server](https://github.com/user-attachments/assets/96fef5cf-9f3e-4bd6-ac58-331dee1e0bf2)
     *Ref 8: Windows 2022 server*<br>
+
+#Day 6
+ 1. Elastic agents and Fleet server. Stand alone fleet server or Fleet Managed serve. Beats vs. Agents. Ultimately Fleet Servers localize Agents.
+    ![types of beat](https://github.com/user-attachments/assets/b67e4d5a-f6f3-47f6-a437-276dd7dff937)<br>
+
+    
