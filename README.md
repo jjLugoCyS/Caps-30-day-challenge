@@ -48,5 +48,6 @@
 #Day 6
  1. Elastic agents and Fleet server. Stand alone fleet server or Fleet Managed serve. Beats vs. Agents. Ultimately Fleet Servers localize Agents.
     ![types of beat](https://github.com/user-attachments/assets/b67e4d5a-f6f3-47f6-a437-276dd7dff937)<br>
+    *ref 9: Types of Beats*<br>
 
     
