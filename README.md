@@ -48,6 +48,24 @@
 #Day 6
  1. Elastic agents and Fleet server. Stand alone fleet server or Fleet Managed serve. Beats vs. Agents. Ultimately Fleet Servers localize Agents.
     ![types of beat](https://github.com/user-attachments/assets/b67e4d5a-f6f3-47f6-a437-276dd7dff937)<br>
-    *ref 9: Types of Beats*<br>
+    *Ref 9: Types of Beats*<br>
 
-    
+#Day 7 
+ 1. Create a Fleet Server: Deploy > New Server > Dedicated CPU > location > Ubuntu 22.04 > 30GB NVMe > VPC 2.0 only additional feature > hostname > deploy now.
+ 2. On the Elastic WebGUI: Click Fleet > add a Fleet server, enter https: and then the servers public IP > Generate fleet server policy > Copy Installation output.
+ 3.  On Vultr click the fleet server and view console to check if the server is ready > open PowerShell and SSH into the server > apt-get update && apt-get upgrade -y > copy/paste installation for fleet server > In Vultr Fleet server go to the firewall to allow all in port ranfe 1-65535 custom and your fleet IP address > modify the firewall rule on your ELK server with "ufw allow 9200" > clcik continue enrolling Elastic agent > enter name > create policy > select Windows tab and copy > On Vultr go to the Windows server > Open PowerShell and paste the Windows copy > modify in fleet server firewall if you get a connecting error > In Elastic WebGUI click fleet > edit fleet server yo change port > ,odify installation URL with the new port 8220 and include "--insecure".
+    ![Fleet Logs](https://github.com/user-attachments/assets/db6e0c35-865c-4e85-8bfb-8bbea90c3aa6)<br>
+    *Ref 10: Fleet logs*<br>
+
+#Day 8
+ 1. Sysmon is an Endpoint tool used for even monitoring. It generates telemetry to increase malicious detection. Use of process GUID correlates events using Event IDs.
+    ![Sysmon event id 1](https://github.com/user-attachments/assets/2da2218f-e8a0-42ee-88d4-5b88c3c7ce14)<br>
+    *Ref 11: Event id 1*<br>
+    ![Sysmon event id 3](https://github.com/user-attachments/assets/3156fc62-9a5e-4341-8498-bb1daba5a3ee)<br>
+    *Ref 12: Event id 3*<br>
+    ![Sysmon event id 6-7-8](https://github.com/user-attachments/assets/63f4eb2e-f976-469c-8f55-1212eeddae21)<br>
+*Ref 13: Event id 6-7-8*<br>
+![Sysmon event id 10](https://github.com/user-attachments/assets/35326e6e-a4be-4a5a-a7af-1a36ac3fd115)<br>
+*Ref 14: Event id 10*<br>
+![Sysmon event id 22](https://github.com/user-attachments/assets/75b978fd-ecb1-40e4-9dae-efe0b0500437)<br>
+*Ref 15: Event id 22*<br>
