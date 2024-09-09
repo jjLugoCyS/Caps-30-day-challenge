@@ -69,3 +69,12 @@
 *Ref 14: Event id 10*<br>
 ![Sysmon event id 22](https://github.com/user-attachments/assets/75b978fd-ecb1-40e4-9dae-efe0b0500437)<br>
 *Ref 15: Event id 22*<br>
+
+#Day 9
+ 1. Installing Sysmon and using Olaf sysmon configuration.xml
+    ![Sysmon installed](https://github.com/user-attachments/assets/fbb5aecc-4f10-44e8-80a2-dfa5ca30c36d)<br>
+*Ref 16: Sysmon Installed*<br>
+![Sysmon event viewer](https://github.com/user-attachments/assets/864a6d45-9853-4142-9ab1-722d392af7b2)<br>
+*Ref 17: Sysmon Event Viewer*<br>
+![sysmon olaf config](https://github.com/user-attachments/assets/30422d25-63f5-41d7-9a20-2553d91f843d)<br>
+*Ref 18: Olaf config*<br>
