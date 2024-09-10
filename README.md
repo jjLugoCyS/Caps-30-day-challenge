@@ -78,3 +78,12 @@
 *Ref 17: Sysmon Event Viewer*<br>
 ![sysmon olaf config](https://github.com/user-attachments/assets/30422d25-63f5-41d7-9a20-2553d91f843d)<br>
 *Ref 18: Olaf config*<br>
+
+#Day 10
+ 1. Ingest Sysmon and Windows Defender logs into Elasticsearch, On the Elastic WebGUI click "Add Integrations. > search for Windows event > Click custom Windows event logs > Click Add custom Winodows event logs > Enter name, description, and for channel name: on your windows server machine find "operational" under Sysmon in event viewer and get "Full Name" from properties > Add integration to abn existing host policy I created > click save and continue, then save and deploy.
+ 2. Do the same for Windows Defender, but this tiume click advanced options > Include Event IDs in "Event ID" field > add integration the same way.
+ 3. On Elastic WebGUI go to integrations and custom Windows event logs > Copy "win.logevent_id" Go to discover > paste in fieldname in search and exists for.<br>
+ ![sysmon log](https://github.com/user-attachments/assets/1e1a0c3f-fe4d-4467-9f0d-8dbd1714b220)<br>
+ *Ref 19: Sysmon log*<br>
+![Windows defender log](https://github.com/user-attachments/assets/ba562704-d28a-4d4f-b7d9-384f84bf145e)<br>
+*Ref 20: Windows Defender Log*<br>
