@@ -87,3 +87,10 @@
  *Ref 19: Sysmon log*<br>
 ![Windows defender log](https://github.com/user-attachments/assets/ba562704-d28a-4d4f-b7d9-384f84bf145e)<br>
 *Ref 20: Windows Defender Log*<br>
+
+#Day 11
+ 1. Investigating Brute Force attacks, Types: 1.Brute Force, 2. Dictionary, 3. Credential Stuffing.
+ 2. Protect yourself with long complex passwords or use pass phrases, use a password manager, MFA, etc...
+ 3. Tools used to brute force: 1. Hydra, 2. Hashcat, 3. JohntheRipper<br>
+ ![brute force recap](https://github.com/user-attachments/assets/189f0a31-5328-468f-9899-18eeea1fea09)<br>
+    *Ref 21: Brute Force Recap*<br>
