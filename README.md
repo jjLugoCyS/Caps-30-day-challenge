@@ -141,6 +141,6 @@
  2. Enter your query, add layer, choose choropleth, fill out the layer. Save to existing dashboard.
  3. Create a successful RDP activity map. Make the whole dashboard look better with some visualization tables.<br>
  ![azure alert dashboard day 17](https://github.com/user-attachments/assets/b8769832-6120-4294-baf0-590772c9f8de)<br>
- *Ref 30: Alert dasboard*<br>
+ *Ref 30: Alert dashboard*<br>
 ![azure final dashboard day 17](https://github.com/user-attachments/assets/ed6e3039-5e31-45d6-9cc0-d55e9bbdf275)<br>
 *Ref 31: Final dashboard*<br>
