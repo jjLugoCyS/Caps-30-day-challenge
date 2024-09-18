@@ -94,3 +94,17 @@
  3. Tools used to brute force: 1. Hydra, 2. Hashcat, 3. JohntheRipper<br>
  ![brute force recap](https://github.com/user-attachments/assets/189f0a31-5328-468f-9899-18eeea1fea09)<br>
     *Ref 21: Brute Force Recap*<br>
+
+#Day 12
+ 1. Setup an SSH server using Ubuntu 24.04.
+ 2. cat auth.log to check for authentication events; use: grep -i failed auth.log - to view only failed login attempts.
+ 3.  grep -i failed auth.log | grep -i root | cut -d ' ' -f 9 - for all ip address and user name "root"<br>
+ ![azure failed login](https://github.com/user-attachments/assets/a40479ef-b286-47dd-9ea0-aa2a105aa9d3)<br>
+ *Ref 22: Failed login event*<br>
+ 
+#Day 13
+ 1. Install elastic agent on SSH Ubuntu server. On elastic webGUI go to fleet > agent policy > create policy, and check what logs are being generated.
+ 2. Go to view all agent policies > click agents > add agent and install the elastic agent on the Ubunut SSH server.
+ 3. Back on elastic webGUI go to discover amd view the logs being fed from the Linux agent.name and search for authentication failures.<br>
+ ![azure autentication failure](https://github.com/user-attachments/assets/1bb3783a-5250-4840-acb2-951c2e3836ab)<br>
+ *Ref 23: Authentication failure*
