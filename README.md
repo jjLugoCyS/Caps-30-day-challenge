@@ -144,3 +144,12 @@
  *Ref 30: Alert dashboard*<br>
 ![azure final dashboard day 17](https://github.com/user-attachments/assets/ed6e3039-5e31-45d6-9cc0-d55e9bbdf275)<br>
 *Ref 31: Final dashboard*<br>
+
+#Day 18
+ 1. A Command and Control overview, C2 as defined by Miter Att&ck framework.
+ 2. Attackers need C2 to preform additional actions to get closer to their objective.
+ 3. Common C2 tools: Metasploit, Cobalt Strike, Sliver, and Mythic which will be used in this challenge.<br>
+ ![Mitre framewrok day 18](https://github.com/user-attachments/assets/b413e211-4018-4331-aa11-78406793c419)<br>
+ *Ref 31: Mitre Framewrok*<br>
+ ![Mythic day 18](https://github.com/user-attachments/assets/7e7c1b89-717e-48c1-952b-79dcef957308)<br>
+ *Ref 32: Mythic*<br>
