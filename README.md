@@ -107,4 +107,40 @@
  2. Go to view all agent policies > click agents > add agent and install the elastic agent on the Ubunut SSH server.
  3. Back on elastic webGUI go to discover amd view the logs being fed from the Linux agent.name and search for authentication failures.<br>
  ![azure autentication failure](https://github.com/user-attachments/assets/1bb3783a-5250-4840-acb2-951c2e3836ab)<br>
- *Ref 23: Authentication failure*
+ *Ref 23: Authentication failure*<br>
+
+#Day 14
+ 1. Create Alerts and Dashboards in Kibana. In elastic webGUI go to discover and filter for your Linux SSH system.
+ 2. You can filter out agent.name, authentication event, username, source ip, and country name.
+ 3. Create an alert by clicking Alerts and fill out the query with whatever fits for the situation and then save the rule.
+ 4. Go to maps and rebuild your search query, click add layer, choose choropleth, fill out the layer and add it to a new dashboard. Save.<br>
+ ![azure attempts filter day 14](https://github.com/user-attachments/assets/690aab5e-0a60-42fc-bffb-9af64133f731)<br>
+ *Ref 24: Authentication attempts filter*<br>
+ ![azure create rule day 14](https://github.com/user-attachments/assets/dac84ccc-29ac-472e-b315-95a8055c0bd7)<br>
+*Ref 25: Create a rule*<br>
+![azure query day 14](https://github.com/user-attachments/assets/c568d0b1-524c-4e09-a58a-6fd23e03f6e3)<br>
+*Ref 26: Query build*<br>
+![azure dashboard day 14](https://github.com/user-attachments/assets/05b2cbd8-2c12-4379-a1c3-2ba3317ad486)<br>
+*Ref 27: Dashboard*<br>
+
+#Day 15
+ 1. Discussing RDP where Shadon and Censys are sites where you can find how many RDP ports are being exposed and for what.
+ 2. To protect yourself: Turn off RDP, turn on MFA, restrict access, use better passwords, and always change your default accounts.<br>
+ ![RDP day 15](https://github.com/user-attachments/assets/6e94aee8-b882-4496-a690-0c0848dd9129)<br>
+*Ref 28: RDP*
+
+ #Day 16
+  1. Alerts and Dashboards part 2. Go to discover on elastic webGUI and sort for your Windows 2022 server.
+  2. Filter for code 4625 and review those bruteforce events, add source ip and user.name to the query and save it.
+  3. Create an Alert for RDP activities like the SSH activity rule. You can create more robust rules under security, click rules then click detection rules<br>
+  ![azure RDP brute force rule day 16](https://github.com/user-attachments/assets/01990f2d-afc2-41f8-916c-8cc874ca9450)<br>
+  *Ref 29: RDP brute force rule*<br>
+  
+#Day 17
+ 1. Create a dashboard for RDP activity on elastic web GUI in maps section.
+ 2. Enter your query, add layer, choose choropleth, fill out the layer. Save to existing dashboard.
+ 3. Create a successful RDP activity map. Make the whole dashboard look better with some visualization tables.<br>
+ ![azure alert dashboard day 17](https://github.com/user-attachments/assets/b8769832-6120-4294-baf0-590772c9f8de)<br>
+ *Ref 30: Alert dasboard*<br>
+![azure final dashboard day 17](https://github.com/user-attachments/assets/ed6e3039-5e31-45d6-9cc0-d55e9bbdf275)<br>
+*Ref 31: Final dashboard*<br>
