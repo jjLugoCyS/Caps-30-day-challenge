@@ -153,3 +153,13 @@
  *Ref 31: Mitre Framewrok*<br>
  ![Mythic day 18](https://github.com/user-attachments/assets/7e7c1b89-717e-48c1-952b-79dcef957308)<br>
  *Ref 32: Mythic*<br>
+
+#Day 19
+ 1. Planning out an "attack" with a diagram; Phase 1, initial access w/ Kali using RDP brute force. Successful Authentication.
+ 2. Phase 2, execute discovery command: whoami, ipconfig, net user, etc...
+ 3. Phase 3, In the RDP session disable Windows Defender.
+ 4. Phase 4, Invoke an expression with PowerShell to download a mythic agent from our C2 server, then execute the mythic agent.
+ 5. Phase 5, establish command & control.
+ 6. Phase 6, Download the passwords.txt file.<br>
+ ![30-Day-attack-diagram](https://github.com/user-attachments/assets/f719b1d9-10fd-4d0c-89b3-ad3fac3e4205)<br>
+ *Ref 33: Attack Diagram*
