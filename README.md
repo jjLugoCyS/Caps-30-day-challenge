@@ -163,3 +163,12 @@
  6. Phase 6, Download the passwords.txt file.<br>
  ![30-Day-attack-diagram](https://github.com/user-attachments/assets/f719b1d9-10fd-4d0c-89b3-ad3fac3e4205)<br>
  *Ref 33: Attack Diagram*
+#Day 20
+ 1. Set up a Mythic server in your cloud enviroment with Ubuntu 22.04.
+ 2. Obtain Kali linux while the mythic is being spun up
+ 3. On your mythic serve install docker-compose, make, and clone the mythic repo.
+ 4. cd into Mythic directory and install mythic for ubuntu.
+ 5. run make, restart dicker if failed, run make, start the mythic-cli
+ 6. log into the mythic webGUI<br>
+ ![Mythic day 20](https://github.com/user-attachments/assets/7697c177-2474-4ed4-95ab-0295c4b75665)<br>
+ *Ref 34: Mythic*<br>
