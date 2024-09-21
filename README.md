@@ -163,6 +163,7 @@
  6. Phase 6, Download the passwords.txt file.<br>
  ![30-Day-attack-diagram](https://github.com/user-attachments/assets/f719b1d9-10fd-4d0c-89b3-ad3fac3e4205)<br>
  *Ref 33: Attack Diagram*
+
 #Day 20
  1. Set up a Mythic server in your cloud enviroment with Ubuntu 22.04.
  2. Obtain Kali linux while the mythic is being spun up
@@ -172,3 +173,21 @@
  6. log into the mythic webGUI<br>
  ![Mythic day 20](https://github.com/user-attachments/assets/7697c177-2474-4ed4-95ab-0295c4b75665)<br>
  *Ref 34: Mythic*<br>
+
+#Day 21
+ 1. Setting up a Mythic agent and learning how a brute force attack is carried out.
+ 2. In windows server create a passwords.txt file with a password in it, change the login password to that password.
+ 3. Spin up Kali linux machine and open a terminal, cd to wordlists and sudo head -50 rockyou.txt > mydfir-wordlists.txt to copy the 50 passwords from that list into a new file with the addition of your password from before. Create a target.txt and use crowbar to launch a brute force "attack". then use xfreerdp to rdp into the windows server.
+ 4. Now perform your discovery phase commands.
+ 5. Disable Windows defender from phase 3.
+ 6. In Mythic go to mythic-cli anf install the Apollo Agent and C2profile http.
+ 7. Generate a new payload selecting the target OS > select the C2 profile: changing the call back host to your mythic public ip > Name the payload > create the payload. Right-click download to copy link. In a terminal wget the download, change the payloads name, move the payload into a new directory and star a python3 server with port 9999
+ 8. In kali linux, in the rdp session open PowerShell and invoke a WebRequest to the mythic machine on port 9999, include -OutFile flag to download the payload. Run the .exe/
+ 9. In Mythic go to active callbacks, click keyboard icon on the active task to run commands. Use download path and file and exfiltrate passwords.txt<br>
+ ![Mythic callback day 21](https://github.com/user-attachments/assets/4b497c6d-2012-41ad-b25b-25f32d079f1e)<br>
+*Ref 35: Callback*<br>
+ ![mythic change payload name day 21](https://github.com/user-attachments/assets/822657ba-cb2e-416d-8da3-63060d370695)<br>
+ *Ref 36: Change Payload name*<br>
+ ![Mythic file download day 21](https://github.com/user-attachments/assets/900a9e78-a4ff-439a-a7ba-6a5394c3dff7)<br>
+ *Ref 37: passwords.txt download*<br>
+
