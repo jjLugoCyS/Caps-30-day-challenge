@@ -184,10 +184,10 @@
  7. Generate a new payload selecting the target OS > select the C2 profile: changing the call back host to your mythic public ip > Name the payload > create the payload. Right-click download to copy link. In a terminal wget the download, change the payloads name, move the payload into a new directory and star a python3 server with port 9999
  8. In kali linux, in the rdp session open PowerShell and invoke a WebRequest to the mythic machine on port 9999, include -OutFile flag to download the payload. Run the .exe/
  9. In Mythic go to active callbacks, click keyboard icon on the active task to run commands. Use download path and file and exfiltrate passwords.txt<br>
+  ![mythic change payload name day 21](https://github.com/user-attachments/assets/822657ba-cb2e-416d-8da3-63060d370695)<br>
+ *Ref 35: Change Payload name*<br>
  ![Mythic callback day 21](https://github.com/user-attachments/assets/4b497c6d-2012-41ad-b25b-25f32d079f1e)<br>
-*Ref 35: Callback*<br>
- ![mythic change payload name day 21](https://github.com/user-attachments/assets/822657ba-cb2e-416d-8da3-63060d370695)<br>
- *Ref 36: Change Payload name*<br>
+*Ref 36: Callback*<br>
  ![Mythic file download day 21](https://github.com/user-attachments/assets/900a9e78-a4ff-439a-a7ba-6a5394c3dff7)<br>
  *Ref 37: passwords.txt download*<br>
 
