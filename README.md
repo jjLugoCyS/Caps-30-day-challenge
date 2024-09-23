@@ -191,3 +191,18 @@
  ![Mythic file download day 21](https://github.com/user-attachments/assets/900a9e78-a4ff-439a-a7ba-6a5394c3dff7)<br>
  *Ref 37: passwords.txt download*<br>
 
+#Day 22
+ 1. Creating more Alerts and Dashboards. Go over to Discover on your elastic webGUI and click New. Search for Events involving the Windows Server and event code 1. Then create a rule to find apollow creation and save it.
+ 2. Go to detection rules under security and create a new rule, paste in your rule in cutom query, fill out the required fields with timestamp, winlog.event_data.User, Parent Image, ParentCommandLine, and CurretnDirectory > click continue > Name and Describe the rule and save it.
+ 3. Go to Discover and create another query search for @timestamp, winlog.event_data.User, winlog.event_data.ParentImage, winlog.event_data.ParentCommandLine, winlog.event_data.Image, winlog.event_data.CommandLine, winlog.event_data.CurrentDirectory,winlog.event_data.ProcessGUID,and host.hostname and copy them into your dashboard.
+ 4. Now go to Dashboards and create a new dashboard then create a visualization with @timestamp, winlog.event_data.User, winlog.event_data.ParentImage, winlog.event_data.ParentCommandLine, winlog.event_data.Image, winlog.event_data.CommandLine, winlog.event_data.CurrentDirectory,winlog.event_data.ProcessGUID,and host.hostname and save and return
+ 5. Create another visualization for event id 3 with winlog.event_data.Image, winlog.event_data.SourceIp, winlog.event_data.DestinationIp, and winlog.event_data.DestinationPort.
+ 6. One more for event id 5001 with hostname, ProductName, and event.code<br>
+ ![Rule day 22](https://github.com/user-attachments/assets/b102283e-ac15-474d-bba3-86e58eca5e84)<br>
+ *Ref 38: Rule*<br>
+ ![Required fields day 22](https://github.com/user-attachments/assets/74ed0ba8-b116-43f3-86b7-8b315ad0674d)<br>
+ *Ref 39: Required fields*<br>
+ ![Mythic rule day 22](https://github.com/user-attachments/assets/22076bbd-56bd-489b-a710-077ea5157eb6)<br>
+*Ref 40: Mythic Rule*<br>
+![Dashboard day 22](https://github.com/user-attachments/assets/63016fd9-0b31-40c1-864e-d1c070e6f066)<br>
+*Ref 41: Dashboard*<br>
