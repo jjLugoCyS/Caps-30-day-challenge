@@ -206,3 +206,9 @@
 *Ref 40: Mythic Rule*<br>
 ![Dashboard day 22](https://github.com/user-attachments/assets/63016fd9-0b31-40c1-864e-d1c070e6f066)<br>
 *Ref 41: Dashboard*<br>
+
+#Day 23
+ 1. Discussing ticketing systems. Tickets can be anything want, containing inofrmation relevant to the situation. To keep track of what is going on and keen audit trail and accountability, saitsfying a part of AAA.
+ 2. osTicket is an open source ticketing system.<br>
+ ![osTicket day 23](https://github.com/user-attachments/assets/c7c3d91b-94b6-4903-b9ef-b122994ed75b)<br>
+ *Ref 42: osTicket*<br>
