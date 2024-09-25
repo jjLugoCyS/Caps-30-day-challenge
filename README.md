@@ -212,3 +212,20 @@
  2. osTicket is an open source ticketing system.<br>
  ![osTicket day 23](https://github.com/user-attachments/assets/c7c3d91b-94b6-4903-b9ef-b122994ed75b)<br>
  *Ref 42: osTicket*<br>
+
+#Day 24
+ 1. Setting up an <a href="https://osticket.com/"> osTicket</a> system, first deploy a vm witn Windows Server 22022.
+ 2. Download XAMPP and edit the properties config file; change apache domain name to the vms public ip. start it normally and authorize it to the public, also change the pma. Change php admin config, change bind to the localhost ipv4 address and tcp to the public ip address. Create an endpoint firewall rule to allow inbound connections on ports 80,443, and 3306.
+ 3. Go back to xampp and start apache and mysql services, then go to apache admin > click phpMyadmin.
+ 4. Install osTicket, while the 2nd osTicket zip is being extracted navigate to xampp htdocs and create a new osTicket drirectory. Now back at the osTicket download (after extraction) copy/paste scripts and upload folders into the xampp osTicket directory.
+ 5. In your browser on the osTicket machine enter <the machines public ip>/osticket/upload, change the sample config file inside upload > include, fill out basic installation form and create a new database, install. Now go to phpmyadmin console > new > create DB and assign it to the user on the ip you're using.
+ 6. Use PowerShell to configure file permission with icacls .\ost-configure.php /reset
+ 7. Log onto osTicket and go to admin panel.<br>
+ ![XAMPP day 24](https://github.com/user-attachments/assets/c274b7b1-0d9c-45f7-81b6-5205a0f96a19)<br>
+*Ref 43: XAMPP*<br>
+![phpMyAdmin day 24](https://github.com/user-attachments/assets/bdf085c2-6aff-48df-99ac-c566f12a4295)<br>
+*Ref 44: phpMyAdmin*<br>
+![Installer day 24](https://github.com/user-attachments/assets/5a57a227-5da4-4dbf-b381-9591844fd9e5)<br>
+*Ref 45: Installer*<br>
+![osticket install complete day 24](https://github.com/user-attachments/assets/b7572b79-e6b1-48b0-b6ff-ef6f4ac4a99c)<br>
+*Ref 46: osTicket Install Complete*
