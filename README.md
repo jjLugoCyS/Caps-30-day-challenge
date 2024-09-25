@@ -229,3 +229,12 @@
 *Ref 45: Installer*<br>
 ![osticket install complete day 24](https://github.com/user-attachments/assets/b7572b79-e6b1-48b0-b6ff-ef6f4ac4a99c)<br>
 *Ref 46: osTicket Install Complete*
+
+#Day 25
+ 1. Integrating osTIcket and ELK. In osTicket dashboard go to Admin Panel > API> add new API key, enter your private ip (or public ip if the 2 vms are not on the same vpc) address of the ELK Server.
+ 2. Head over to elastic webGUI and click staj management under management. Then connectors under Alerts and Insights, create connector > choose webhook > <ip address of osticket>/ticket/upload/api/tickets.xml, no auth, add http header: "X-API-Key" with the value of the API key created before > save and test. Create an action (can use the example <a href="https://github.com/osTicket/osTicket/blob/develop/setup/doc/api/tickets.md">HERE</a>). Click run. You can then check your ticketing system on osTicket and if it's there you are full functional.<br>
+ ![osticket login day 25](https://github.com/user-attachments/assets/8959674c-51fa-4283-86a5-4cb727b89ae6)<br>
+ *Ref 47: osTicket*<br>
+ ![so far check list day 25](https://github.com/user-attachments/assets/66703f3e-eab7-4bd7-9a24-2903c5823165)<br>
+ *Ref 48: Challenge so Far*<br>
+
