@@ -238,3 +238,21 @@
  ![so far check list day 25](https://github.com/user-attachments/assets/66703f3e-eab7-4bd7-9a24-2903c5823165)<br>
  *Ref 48: Challenge so Far*<br>
 
+#Day 26
+ 1. Investigate SSH brute force attacks, select alerts under security in the elastic webGUI, click on timelines, click "all alerts involving a single user" timeline for an example
+ 2. Go back to alerts and click on an alert (view details); things of note to investigate would be: IP-Is this IP known to perform brute force activity? Any other users affected by this IP? Were any of them successful? What activity occured after successful login? Copy the source ip address and check it in <a href="https://abuseipdb.com/">Abusreipdb.com</a> or <a href="viz.greynoise.io">viz.greynoise.io</a>.  IP-Is this IP known to perform brute force activity? -Yes
+ 3. In discover paste in the ip address and check user.name to see affected users. -Any other users affected by this IP?
+ -yes, 6(root, user, admin, debian, ubuntu, ftp)
+ 4. Type "and accepted" in the query, realize that it is case sensitive, use "Accepted" with the ip query. -Were any of them successful? -No
+ 5. Since there were no successes no activity occured. -What activity occured after successful login? -Nothing.
+ 6. You can now go to Security > actions > webhook: select "For each alert", create a body (use osTicket example taking out attachments and ip), change subject by adding a variable(sule.name, small button on right cornet of box), and message content > save changes. Check your osTicket for generated tickets<br>
+ ![Single user timeline day 26](https://github.com/user-attachments/assets/8db91a77-08f7-44a4-a97a-a34b7745a5c0)<br>
+*Ref 49: Single user timeline*<br>
+![Alert details day 26](https://github.com/user-attachments/assets/e5e3a2e4-ad83-40f1-a3f8-9ecacc48bd51)<br>
+*Ref 50: Alert details*<br>
+![Abuseipdb day 26](https://github.com/user-attachments/assets/2caccc88-8e98-4d86-af86-a1c09a08ea79)<br>
+*Ref 51: Abuseipdb*<br>
+![Greynoise day 26](https://github.com/user-attachments/assets/b6b20c85-a625-4da0-bc23-d4e5db7960e7)<br>
+*Ref 52: Greynoise*<br>
+![affected users day 26](https://github.com/user-attachments/assets/c7b58b72-c3ad-46e0-ab83-874b3129b522)<br>
+*Ref 53: Affected users*<br>
