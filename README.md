@@ -250,9 +250,11 @@
 *Ref 49: Single user timeline*<br>
 ![Alert details day 26](https://github.com/user-attachments/assets/e5e3a2e4-ad83-40f1-a3f8-9ecacc48bd51)<br>
 *Ref 50: Alert details*<br>
+![Asked questions day 26](https://github.com/user-attachments/assets/c79165b8-a102-447b-93a8-0e11305b8f70)<br>
+*Ref 51: Investigative questions*
 ![Abuseipdb day 26](https://github.com/user-attachments/assets/2caccc88-8e98-4d86-af86-a1c09a08ea79)<br>
-*Ref 51: Abuseipdb*<br>
+*Ref 52: Abuseipdb*<br>
 ![Greynoise day 26](https://github.com/user-attachments/assets/b6b20c85-a625-4da0-bc23-d4e5db7960e7)<br>
-*Ref 52: Greynoise*<br>
+*Ref 53: Greynoise*<br>
 ![affected users day 26](https://github.com/user-attachments/assets/c7b58b72-c3ad-46e0-ab83-874b3129b522)<br>
-*Ref 53: Affected users*<br>
+*Ref 54: Affected users*<br>
