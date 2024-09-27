@@ -272,7 +272,7 @@
 *Ref 57: Abuseipdb.com rdp*
 ![greynoise rdp day 27](https://github.com/user-attachments/assets/645121f4-7c68-481a-b539-546fafac6c14)<br>
 *Ref 58: greynoise.io rdp*<br>
-![Successful RDP day 27](https://github.com/user-attachments/assets/08c28160-9d4e-4ed6-8719-fccebc6dd8a0)<br>
+![Successful RDP day 27](https://github.com/user-attachments/assets/b00063f8-da0e-43b5-9738-80667b3b9196)<br>
 *Ref 59: Successful RDP questions*<br>
 ![special priveleges assigned day 27](https://github.com/user-attachments/assets/ff08bdfd-7a4e-478a-958b-7243f5eca701)<br>
 *Ref 60: Special Priveleges Assigned*<br>
