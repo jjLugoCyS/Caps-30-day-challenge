@@ -258,3 +258,21 @@
 *Ref 53: Greynoise*<br>
 ![affected users day 26](https://github.com/user-attachments/assets/c7b58b72-c3ad-46e0-ab83-874b3129b522)<br>
 *Ref 54: Affected users*<br>
+
+#Day 27
+ 1. Investigate an RDP brute force attack, go to alerts under security in the elastic webGUI, filter for RDP brute force alerts and view details of an alert.
+ 2. Get the rule to create an osTicket by copying the SSh brute force alert. Copy the body of the actions tab then go to RDP rile and paste it into the body of the webhook action.
+ 3. We can use the same investigative questioning and process as the SSH brute force attack: Brute force -  106.75.134.63 IP-Is this IP known to perform brute force activity? -yes Any other users affected by this IP? -yes, 6(root, user, admin, debian, ubuntu, ftp), Were any of them successful?  -No, -What activity occured after successful login? -Nothing. Carry out the investigation in the same way using the same steps using event.code: 4624 instead of "Accepted"
+ 4. If there were a successful brute force, filter out by "<source.ip> and event.code: 4624 and <user.name> and <winlog.event_data.TargetLogonId>" or "<user.name> and <winlog.event_data.TargetLogonId" > follow the chain of events. If you follow the brute force attempt we did a few days ago, you can see all the steps completed with our successful logon, like assigning special priveleges. If you analyze timestamps you may notice if it's an automated(brute force) session.<br>
+ ![alerts day 27](https://github.com/user-attachments/assets/52f4c6c0-61d3-44c4-8fa8-7db62ef5b77d)<br>
+ *Ref 55: Alerts*<br>
+ ![osticket rdp bruteforce day 27](https://github.com/user-attachments/assets/aa6c54f8-f9d5-4a13-84e1-9015d9e1ea5b)<br>
+*Ref 56: osTicket rdp*<br>
+![abuseipdb rdp day 27](https://github.com/user-attachments/assets/3a1c63be-03e5-4bbd-aed4-466f327101e1)<br>
+*Ref 57: Abuseipdb.com rdp*
+![greynoise rdp day 27](https://github.com/user-attachments/assets/645121f4-7c68-481a-b539-546fafac6c14)<br>
+*Ref 58: greynoise.io rdp*<br>
+![special priveleges assigned day 27](https://github.com/user-attachments/assets/ff08bdfd-7a4e-478a-958b-7243f5eca701)<br>
+*Ref 59: Special Priveleges Assigned*<br>
+![event code and 4624 day 27](https://github.com/user-attachments/assets/3dff41f1-9f5d-4235-9618-c696d8652496)<br?
+*Ref 60: event.code 4624*<br>
