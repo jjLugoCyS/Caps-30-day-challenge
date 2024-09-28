@@ -278,3 +278,20 @@
 *Ref 60: Special Priveleges Assigned*<br>
 ![event code and 4624 day 27](https://github.com/user-attachments/assets/3dff41f1-9f5d-4235-9618-c696d8652496)<br?
 *Ref 61: event.code 4624*<br>
+
+#Day 28
+ 1. Investigate the Mythic agent in elastic, on the discover screen type in your svchost.exe, sort old to new and follow the chain of events. You can check for a lot of back and forth traffic indicative to a C2 session, or look at a "heartbeat" and use <a href="https://www.blackhillsinfosec.com/projects/rita/">RITA</a>, or look at process and network creations.
+ 2. Go to your dashboards and select suspicious activity, look out for strange processes and/or dashboards. Use the winlog.event_data.DestinationIp of a suspicious event and filter it out with event.code: 3 on the discover screen and build a timeline.
+ 3. in one of the events look for the processGUID and copy it. paste it into your query to filter out discover, investigate an event to see what the user did: processes opened?, From where?, When?, What did they do? Pay attention to even codes. find file hashes for files you are investigationg. Search for the processGUID of the C2 agent you used previously, find the processId and ParenProcessId yo filter out events. Also search for the passwords.txt file and examine those events.
+ 4. Go to rules under Security > click on detection rules > edit rule settings > Actions and copy the body > paste it into the body of the mythic agent rule (create the webhook if needed). You can edit rule settings to include fields that are relevant to you under edit rule settings > about and find the "custom higlighted fields"
+ 5. In osTicket click on the newly generated ticket, get spme information thats important for your investigation and make a query in elastic discover. Run your investigation and create a timeline and realize elastic recorded everything that was done.<br>
+ ![suspicious ip day 28](https://github.com/user-attachments/assets/b04cdcf3-d203-487f-b2a6-314e5ae28dc9)<br>
+ *Ref 62: Suspicious IP*<br>
+![event code 3 and destination ip filter day 28](https://github.com/user-attachments/assets/7fb0ca71-0c07-49dc-a248-da1eef5a67c7)<br>
+*Ref 63: Event code 3 and destination ip filter*<br>
+![Process GUID day 28](https://github.com/user-attachments/assets/74bceca5-df5b-4328-8bb5-947c33ec0080)<br>
+*Ref 64: ProcessGUID*<br>
+![svchost creation amd sha day 28](https://github.com/user-attachments/assets/31ca2d07-66cd-4eb8-ba11-d2ccef1240ab)<br>
+*Ref 65: svchost creation and SHA*<br>
+![investigation notes day 28](https://github.com/user-attachments/assets/b20721fc-d05c-42e9-b489-7b0cfd88fe27)<br>
+*Ref 66: Investigation timeline and notes*<br>
