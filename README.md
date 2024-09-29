@@ -295,3 +295,24 @@
 *Ref 65: svchost creation and SHA*<br>
 ![investigation notes day 28](https://github.com/user-attachments/assets/b20721fc-d05c-42e9-b489-7b0cfd88fe27)<br>
 *Ref 66: Investigation timeline and notes*<br>
+
+#Day 29
+ 1. Set up Elastic Defend, Elastics EDR. In elastic click into integrations > Elastic Defend > Add Elastic Defend, name it, select traditional Endpoints and complete EDr oprion, add to existing host and choose the Windows Sever policy > save and continue > save and deploy.
+ 2. Go to manage under Security > click endpoint >actions (all the way to the right)
+ 3. In the discover section enter malware into a new query, and look for a malware prevention alert. You can also check for an alert under Security > Alerts, to open the alert and assess it.
+ 4. To do a response action click on the alert > edit rule settings > Elastic Defend > isolate >save change.
+ 5. Investigate the malware you just tested.<br>
+ ![EDR namin day 29](https://github.com/user-attachments/assets/947d5141-eefa-40ca-b4a1-c5c62a994578)<br>
+*Ref 67: EDR naming*<br>
+ ![EDR integrated day 29](https://github.com/user-attachments/assets/dedd47be-f615-457b-a583-393c2c2016d3)
+*Ref 68: EDR integrated*<br>
+ ![Elastic endpoints day 29](https://github.com/user-attachments/assets/cfefbd83-0334-4815-add2-f35683090ae4)<br>
+*Ref 69: Elastic endpoints*<br>
+![Malware query day 29](https://github.com/user-attachments/assets/f810f7a6-517f-42a8-ab30-7c4e2c483fc8)<br>
+*Ref 70: Malware query*
+![Malware Alert day 29](https://github.com/user-attachments/assets/eaba7fec-b5f3-4e60-a1f0-bd1aa6675b32)<br>
+*Ref 71: Malware Alert*<br>
+![respone action day 29](https://github.com/user-attachments/assets/25a5f51e-7b49-4c9c-929a-b51b5f4473ce)<br>
+*Ref 72: Response action*<br>
+![Elastic security day 29](https://github.com/user-attachments/assets/3b5aa191-e110-4a01-b434-6c6cc9606e88)<br>
+*Ref 73: Elastic Security*<br>
