@@ -316,3 +316,6 @@
 *Ref 72: Response action*<br>
 ![Elastic security day 29](https://github.com/user-attachments/assets/3b5aa191-e110-4a01-b434-6c6cc9606e88)<br>
 *Ref 73: Elastic Security*<br>
+
+#Day 30
+ 1. This was a day about troubleshooting and clean up. Gather thoughts and reflecting on the challenge. It was frustrating at times, but once I was able to troubleshoot the problems I ran into, that feeling made everything worth it. I do have a passion for this stuff and I just want to keep moving forward with it. The challenge felt great and was worth the set backs and wvwn long nights getting things to work. Thanks for everything Steven!
