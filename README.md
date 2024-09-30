@@ -318,4 +318,4 @@
 *Ref 73: Elastic Security*<br>
 
 #Day 30
- 1. This was a day about troubleshooting and clean up. Gather thoughts and reflecting on the challenge. It was frustrating at times, but once I was able to troubleshoot the problems I ran into, that feeling made everything worth it. I do have a passion for this stuff and I just want to keep moving forward with it. The challenge felt great and was worth the set backs and wvwn long nights getting things to work. Thanks for everything Steven!
+ 1. This was a day about troubleshooting and clean up. Gather thoughts and reflecting on the challenge. It was frustrating at times, but once I was able to troubleshoot the problems I ran into, that feeling made everything worth it. I do have a passion for this stuff and I just want to keep moving forward with it. The challenge felt great and was worth the setbacks and even long nights getting things to work. Thanks for everything Steven!
